@@ -13,69 +13,107 @@
 
         <nav class="nav">
             <a href="#about">ABOUT</a>
-            <a href="#gallery">GALLERY</a>
+            <a href="#world">WORLD</a>
             <a href="#information">INFO</a>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero">
-            <div class="hero-content">
+        <section class="top-visual">
+            <div class="top-visual-inner">
+                <img
+                    src="assets/hero_cast.png"
+                    alt="氷華 キャラクタービジュアル"
+                    class="top-visual-image"
+                >
+            </div>
+
+            <div class="top-visual-copy">
                 <p class="hero-subtitle">ORIGINAL GAME</p>
-
                 <h1>氷華</h1>
-
-                <p class="hero-description">
-                    氷と華が交わる世界へ。
-                </p>
-
-                <a class="main-button" href="#about">
-                    MORE
-                </a>
+                <a class="main-button" href="#world">ENTER WORLD</a>
             </div>
         </section>
 
         <section id="about" class="section">
             <p class="section-subtitle">ABOUT</p>
-
             <h2>氷華とは</h2>
 
             <p class="section-text">
-                「氷華」は、氷をテーマにしたオリジナルゲームです。
-                <br><br>
-                ここにはゲームの世界観や、
-                基本的なゲーム内容を掲載します。
+                「氷華」は、個性豊かなキャラクターたちと様々な世界を巡る3Dアクションゲームです。
             </p>
         </section>
 
-        <section id="gallery" class="section gallery-section">
-            <p class="section-subtitle">GALLERY</p>
+        <section id="world" class="section world-section">
+            <p class="section-subtitle">WORLD</p>
+            <h2>COLOR WORLD</h2>
 
-            <h2>SCREENSHOT</h2>
+            <p class="section-text world-guide">
+                球体をクリックすると正面へ移動します。<br>
+                正面に来た球体をもう一度クリックすると、CHARACTERページへ移動します。<br>
+                マウスドラッグ / スワイプでも回転できます。
+            </p>
 
-            <div class="gallery">
-                <div class="gallery-item">
-                    SCREENSHOT 01
+            <div class="world-stage">
+
+                <div class="world-ring-wrap" id="worldRingWrap">
+                    <div class="world-ring" id="worldRing">
+
+                        <button class="world-item" data-index="0" data-world="red" data-color-name="RED" type="button">
+                            <span class="world-color red"></span>
+                        </button>
+
+                        <button class="world-item" data-index="1" data-world="orange" data-color-name="ORANGE" type="button">
+                            <span class="world-color orange"></span>
+                        </button>
+
+                        <button class="world-item" data-index="2" data-world="yellow" data-color-name="YELLOW" type="button">
+                            <span class="world-color yellow"></span>
+                        </button>
+
+                        <button class="world-item" data-index="3" data-world="green" data-color-name="GREEN" type="button">
+                            <span class="world-color green"></span>
+                        </button>
+
+                        <button class="world-item" data-index="4" data-world="water" data-color-name="WATER" type="button">
+                            <span class="world-color water"></span>
+                        </button>
+
+                        <button class="world-item" data-index="5" data-world="blue" data-color-name="BLUE" type="button">
+                            <span class="world-color blue"></span>
+                        </button>
+
+                        <button class="world-item" data-index="6" data-world="purple" data-color-name="PURPLE" type="button">
+                            <span class="world-color purple"></span>
+                        </button>
+
+                        <button class="world-item" data-index="7" data-world="pink" data-color-name="PINK" type="button">
+                            <span class="world-color pink"></span>
+                        </button>
+
+                        <button class="world-item" data-index="8" data-world="clear" data-color-name="CLEAR" type="button">
+                            <span class="world-color clear"></span>
+                        </button>
+
+                    </div>
                 </div>
 
-                <div class="gallery-item">
-                    SCREENSHOT 02
-                </div>
+                <div class="world-ui">
+                    <p class="world-selected-label" id="worldSelectedLabel">RED WORLD</p>
 
-                <div class="gallery-item">
-                    SCREENSHOT 03
+                    <div class="glitch-wrap" id="glitchWrap">
+                        <p class="glitch-text" data-text="Crick to Run">Crick to Run</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="information" class="section">
             <p class="section-subtitle">INFORMATION</p>
-
             <h2>GAME INFO</h2>
 
             <div class="info-table">
-
                 <div class="info-row">
                     <span>TITLE</span>
                     <p>氷華</p>
@@ -83,7 +121,7 @@
 
                 <div class="info-row">
                     <span>GENRE</span>
-                    <p>―</p>
+                    <p>Fantasy Action / World Selection</p>
                 </div>
 
                 <div class="info-row">
@@ -95,12 +133,7 @@
                     <span>PLAYERS</span>
                     <p>1 Player</p>
                 </div>
-
             </div>
-
-            <a href="#" class="download-button">
-                DOWNLOAD
-            </a>
         </section>
 
     </main>
